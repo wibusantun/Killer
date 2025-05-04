@@ -13,15 +13,15 @@ UVICORN_PORT = 7879
 
 
 XRAY_JSON = "/var/lib/marzban/xray_config.json"
-XRAY_EXECUTABLE_PATH = "/var/lib/marzban/core/xray"
+# XRAY_EXECUTABLE_PATH = "/var/lib/marzban/core/xray"
 # XRAY_SUBSCRIPTION_URL_PREFIX = "https://example.com"
 # XRAY_EXECUTABLE_PATH = "/var/lib/marzban/core/xray"
-# XRAY_ASSETS_PATH = "/var/lib/marzban/assets"
+XRAY_ASSETS_PATH = "/var/lib/marzban/assets"
 # XRAY_FALLBACKS_INBOUND_TAG = "INBOUND_X"
 
 
-# TELEGRAM_API_TOKEN = 7501199120:AAEkO8rwF8Ue8CaLWXPWCJFQssINVDSKWhk
-# TELEGRAM_ADMIN_ID = -1002308488038
+# TELEGRAM_API_TOKEN = 123456789:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+# TELEGRAM_ADMIN_ID = 987654321
 # TELEGRAM_PROXY_URL = "http://localhost:8080"
 
 
@@ -34,7 +34,7 @@ HOME_PAGE_TEMPLATE="home/index.html"
 SQLALCHEMY_DATABASE_URL = "sqlite:////var/lib/marzban/db.sqlite3"
 
 ### for developers
-# DOCS=true
+DOCS=true
 # DEBUG=true
 # WEBHOOK_ADDRESS = "http://127.0.0.1:9000/"
 # WEBHOOK_SECRET = "something-very-very-secret"
