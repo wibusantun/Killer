@@ -120,7 +120,7 @@ wget -O /opt/marzban/docker-compose.yml "https://raw.githubusercontent.com/wibus
 apt -y install vnstat
 /etc/init.d/vnstat restart
 apt -y install libsqlite3-dev
-wget https://github.com/Nizwarax/Killer/raw/main/vnstat-2.6.tar.gz
+wget https://github.com/wibusantun/Killer/raw/main/vnstat-2.6.tar.gz
 tar zxvf vnstat-2.6.tar.gz
 cd vnstat-2.6
 ./configure --prefix=/usr --sysconfdir=/etc && make && make install 
@@ -143,7 +143,7 @@ wget -O /opt/marzban/nginx.conf "https://raw.githubusercontent.com/wibusantun/Ki
 wget -O /opt/marzban/default.conf "https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/vps.conf"
 wget -O /opt/marzban/xray.conf "https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/xray.conf"
 mkdir -p /var/www/html
-echo "<pre>Setup by AutoScript KillerVPN</pre>" > /var/www/html/index.html
+echo "<pre>OK</pre>" > /var/www/html/index.html
 
 #install socat
 apt install iptables -y
