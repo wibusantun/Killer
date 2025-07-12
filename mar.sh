@@ -166,6 +166,14 @@ sudo ufw allow https
 sudo ufw allow 8081/tcp
 sudo ufw allow 1080/tcp
 sudo ufw allow 1080/udp
+sudo ufw allow 2053/tcp
+sudo ufw allow 2053/udp
+sudo ufw allow 2052/tcp
+sudo ufw allow 2052/udp
+sudo ufw allow 443/tcp
+sudo ufw allow 443/udp
+sudo ufw allow 80/tcp
+sudo ufw allow 80/udp
 yes | sudo ufw enable
 
 #install database
@@ -210,7 +218,7 @@ colorized_echo green "Script telah berhasil di install"
 rm /root/mar.sh
 colorized_echo blue "Menghapus admin bawaan db.sqlite"
 marzban cli admin delete -u admin -y
-echo -e "[\e[1;31mWARNING\e[0m] Reboot sekali biar ga error lur [default y](y/n)? "
+echo -e "[\e[1;31mWARNING\e[0m] Reboot [default y](y/n)? "
 read answer
 if [ "$answer" == "${answer#[Yy]}" ] ;then
 exit 0
