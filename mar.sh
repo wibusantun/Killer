@@ -96,10 +96,10 @@ timedatectl set-timezone Asia/Singapore;
 sudo bash -c "$(curl -sL https://github.com/GawrAme/Marzban-scripts/raw/master/marzban.sh)" @ install
 
 #Install Subs
-wget -N -P /var/lib/marzban/templates/subscription/  https://raw.githubusercontent.com/Nizwarax/Killer/main/index.html
+wget -N -P /var/lib/marzban/templates/subscription/  https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/index.html
 
 #install env
-wget -O /opt/marzban/.env "https://raw.githubusercontent.com/Nizwarax/Killer/main/env"
+wget -O /opt/marzban/.env "https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/env"
 
 #install Assets folder
 mkdir -p /var/lib/marzban/assets
@@ -107,14 +107,14 @@ cd
 
 #profile
 echo -e 'profile' >> /root/.profile
-wget -O /usr/bin/profile "https://raw.githubusercontent.com/Nizwarax/Killer/main/profile";
+wget -O /usr/bin/profile "https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/profile";
 chmod +x /usr/bin/profile
 apt install neofetch -y
-wget -O /usr/bin/cekservice "https://raw.githubusercontent.com/Nizwarax/Killer/main/cekservice.sh"
+wget -O /usr/bin/cekservice "https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/cekservice.sh"
 chmod +x /usr/bin/cekservice
 
 #install compose
-wget -O /opt/marzban/docker-compose.yml "https://raw.githubusercontent.com/Nizwarax/Killer/main/docker-compose.yml"
+wget -O /opt/marzban/docker-compose.yml "https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/docker-compose.yml"
 
 #Install VNSTAT
 apt -y install vnstat
@@ -139,9 +139,9 @@ sudo apt-get install speedtest -y
 mkdir -p /var/log/nginx
 touch /var/log/nginx/access.log
 touch /var/log/nginx/error.log
-wget -O /opt/marzban/nginx.conf "https://raw.githubusercontent.com/Nizwarax/Killer/main/nginx.conf"
-wget -O /opt/marzban/default.conf "https://raw.githubusercontent.com/Nizwarax/Killer/main/vps.conf"
-wget -O /opt/marzban/xray.conf "https://raw.githubusercontent.com/Nizwarax/Killer/main/xray.conf"
+wget -O /opt/marzban/nginx.conf "https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/nginx.conf"
+wget -O /opt/marzban/default.conf "https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/vps.conf"
+wget -O /opt/marzban/xray.conf "https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/xray.conf"
 mkdir -p /var/www/html
 echo "<pre>Setup by AutoScript KillerVPN</pre>" > /var/www/html/index.html
 
@@ -154,7 +154,7 @@ apt install socat cron bash-completion -y
 curl https://get.acme.sh | sh -s email=$email
 /root/.acme.sh/acme.sh --server letsencrypt --register-account -m $email --issue -d $domain --standalone -k ec-256 --debug
 ~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /var/lib/marzban/xray.crt --keypath /var/lib/marzban/xray.key --ecc
-wget -O /var/lib/marzban/xray_config.json "https://raw.githubusercontent.com/Nizwarax/Killer/main/xray_config.json"
+wget -O /var/lib/marzban/xray_config.json "https://raw.githubusercontent.com/wibusantun/Killer/refs/heads/main/xray_config.json"
 
 #install firewall
 apt install ufw -y
