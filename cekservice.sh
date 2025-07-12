@@ -84,7 +84,7 @@ echo -e "❇️ Nginx               : $NGINX"
 echo -e "❇️ Firewall            : $UFW"
 echo -e "❇️ Marzban Panel       : $MARZ"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "SHARING PORT 443 MARZBAN VERSION AMAN SEMUA BOSSKUH"
+echo -e "PORT 443 MARZBAN"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo ""
 
