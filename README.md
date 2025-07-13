@@ -91,6 +91,7 @@ Lalu ubah variabel {SERVER_IP} dibawah menjadi domain yang sudah di pointing tad
 ![image](https://github.com/GawrAme/MarLing/assets/97426017/191a485c-07a7-4a28-88d3-b66fa403abc7)
 </br>
 
+# Setting WIRE WARP
 The routing rules are as follows:
 
         	   {
