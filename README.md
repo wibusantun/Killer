@@ -90,3 +90,43 @@ Lalu ubah variabel {SERVER_IP} dibawah menjadi domain yang sudah di pointing tad
 # CONTOH
 ![image](https://github.com/GawrAme/MarLing/assets/97426017/191a485c-07a7-4a28-88d3-b66fa403abc7)
 </br>
+
+The routing rules are as follows:
+
+        	   {
+                "type":"field",
+                "outboundTag":"WARP-socks5-v6",
+                "domain":[
+                    "domain:ip.sb",
+                    "domain:test-ipv6.com",
+                    "domain:ip6.me",
+                    "geosite:openai"
+                ]
+            },
+
+For outbound writing, add an outbound setting of the freedom protocol and then go through the proxy:
+
+
+       {
+            "tag":"warp",
+            "protocol":"socks",
+            "settings":{
+                "servers":[
+                    {
+                        "address":"127.0.0.1",
+                        "port":40000
+                    }
+                ]
+            }
+        },
+        {
+            "tag":"WARP-socks5-v6",
+            "protocol":"freedom",
+            "settings":{
+                "domainStrategy":"UseIPv6"
+            },
+            "proxySettings":{
+                "tag":"warp"
+            }
+        }
+
