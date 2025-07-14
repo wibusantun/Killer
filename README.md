@@ -35,9 +35,11 @@ Pastikan anda sudah login sebagai root sebelum menjalankan perintah dibawah
  ```html
 
 Ubuntu
+
  wget https://raw.githubusercontent.com/wibusantun/Killer/main/ubuntu.sh && chmod +x ubuntu.sh && ./ubuntu.sh
- ```
+
 Debian
+
 wget https://raw.githubusercontent.com/wibusantun/Killer/main/debian.sh && chmod +x debian.sh && ./debian.sh
  ```
 
