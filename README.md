@@ -33,7 +33,12 @@ Credit aplikasi full to [Gozargah Marzban](https://github.com/Gozargah), saya ha
  ```
 Pastikan anda sudah login sebagai root sebelum menjalankan perintah dibawah
  ```html
- wget https://raw.githubusercontent.com/wibusantun/Killer/main/mar.sh && chmod +x mar.sh && ./mar.sh
+
+Ubuntu
+ wget https://raw.githubusercontent.com/wibusantun/Killer/main/ubuntu.sh && chmod +x ubuntu.sh && ./ubuntu.sh
+ ```
+Debian
+wget https://raw.githubusercontent.com/wibusantun/Killer/main/debian.sh && chmod +x debian.sh && ./debian.sh
  ```
 
 Buka panel Marzban dengan mengunjungi https://domainmu/dashboard <br>
