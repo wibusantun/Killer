@@ -224,7 +224,7 @@ password  : ${passpanel}
 -=================================-" > /root/log-install.txt
 profile
 colorized_echo green "Script telah berhasil di install"
-rm /root/mar.sh
+rm /root/ubuntu.sh
 colorized_echo blue "Menghapus admin bawaan db.sqlite"
 marzban cli admin delete -u admin -y
 echo -e "[\e[1;31mWARNING\e[0m] Reboot [default y](y/n)? "
