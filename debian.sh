@@ -96,7 +96,7 @@ timedatectl set-timezone Asia/Singapore;
 sudo bash -c "$(curl -sL https://github.com/wibusantun/Marzban-scripts/raw/master/marzban.sh)" @ install
 
 #Install Subs
-wget -N -P /var/lib/marzban/templates/subscription/  https://raw.githubusercontent.com/wibusantun/Killer/main/index.html
+wget -N -P /var/lib/marzban/templates/subscription/  "https://raw.githubusercontent.com/wibusantun/Killer/main/index.html"
 
 #install env
 wget -O /opt/marzban/.env "https://raw.githubusercontent.com/wibusantun/Killer/main/env"
